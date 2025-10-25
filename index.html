@@ -15,7 +15,7 @@
     :root{
         --vh100: 100vh;
         --vh100: 100dvh;
-        --U: calc(var(--vh100) / 6);
+        --U: calc(var(--vh100) / 7);
     }
     body {
       background: #fff;
@@ -26,7 +26,7 @@
       grid-template-rows: var(--U) calc(var(--U) * 3) var(--U);
       justify-items: center;
         align-items: start;
-        gap: calc(var(--U) / 4);                    /* 必要なら余白を追加 */
+        gap: calc(var(--U) / 3);
         margin: 0;
     }
     .title {
@@ -42,7 +42,7 @@
         margin: 0;
     }
     .title p {
-        margin: .25em 0 0;
+        margin: 0;
         font-size: clamp(14px, 2.4vw, 20px);
     }
     .square{

@@ -217,6 +217,10 @@
             if (numOfInPosition == baseRows*baseCols) {
                 completed_picture.classList.add("is-visible")
                 statusEl.textContent = '🧩🎊 Yay!! You solved!! 🎉✨';
+                document.querySelectorAll('.draggable').forEach(piece => {
+                    piece.style.pointerEvents = 'none';
+                    piece.style.cursor = 'default';
+                });
             }
         }
 
@@ -238,5 +242,3 @@
 </body>
 
 </html>
-
-
